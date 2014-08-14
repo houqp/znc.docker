@@ -11,5 +11,5 @@ Usage
 Before building your own ZNC container, please put your **ZNC configuration
 file (znc.conf)** in the same directory with Dockerfile.
 
-
+To backup your updated znc.conf, run `bak.sh`.
 
