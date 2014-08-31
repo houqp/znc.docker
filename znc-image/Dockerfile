@@ -13,9 +13,6 @@ RUN cd $HOME && \
 RUN cd $HOME/znc* && \
 	./configure && make && make install
 
-#ADD ./znc.conf /home/znc-admin/.znc/configs/znc.conf
-#RUN sh -c 'chown -R znc-admin:znc-admin /home/znc-admin/.znc'
-
 RUN mkdir /etc/service/znc
 ADD znc.sh /etc/service/znc/run
 
