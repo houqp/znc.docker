@@ -7,7 +7,7 @@ RUN apt-get -y update && apt-get -y install libssl-dev g++ build-essential
 RUN useradd -m znc-admin
 
 RUN cd $HOME && \
-	curl -o znc.tar.gz http://znc.in/releases/znc-1.4.tar.gz && \
+	curl -o znc.tar.gz http://znc.in/releases/archive/znc-1.6.1.tar.gz && \
 	tar xzf znc.tar.gz
 
 RUN cd $HOME/znc* && \
